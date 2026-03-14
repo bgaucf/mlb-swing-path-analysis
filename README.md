@@ -18,8 +18,18 @@ python analysis.py
 
 Output: `swing-path-with-stats.csv` — swing path columns plus batting stats (wRC+, wOBA, OPS, AVG, etc.).
 
+## Explore
+
+Run the Jupyter notebook for correlations and scatter plots:
+
+```bash
+jupyter notebook exploration.ipynb
+```
+
+Or open `exploration.ipynb` in VS Code and run all cells.
+
 ## Customize
 
 Edit `analysis.py` to change:
-- `SEASON` — year for batting stats (default: 2024)
+- `START_SEASON` / `END_SEASON` — batting stats range (default: 2023–2025)
 - `MIN_PA` — minimum plate appearances (default: 50)
